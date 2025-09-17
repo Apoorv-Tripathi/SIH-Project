@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-// import UnnatiImg2 from "./assets/UnnatiImg2.jpg";
-// import AmitImg from "./assets/AmitImg.jpg";
-// import ArpitImg from "./assets/ArpitImg.jpeg";
-// import AbhinavImg from "./assets/AbhinavImg.jpeg";
+import ApoorvImg from "../assets/ApoorvImg.jpg";
+import UnnatiImg2 from "../assets/UnnatiImg2.jpg";
+import AmitImg from "../assets/AmitImg.jpg";
+import ArpitImg2 from "../assets/ArpitImg2.jpg";
+import AbhinavImg from "../assets/AbhinavImg.jpg";
+import AkshatImg from "../assets/AkshatImg.jpg";
 import {
   Heart,
   Leaf,
@@ -28,7 +30,7 @@ const AboutPage = () => {
       id: 1,
       name: "Apoorv Tripathi",
       role: "Team Leader & Full Stack Developer",
-      image: "./src/assets/ApoorvImg.jpg",
+      image: ApoorvImg,
       bio: "Leads development and architecture while driving 70% of the project’s code and prototype.",
       skills: [
         "React",
@@ -51,7 +53,7 @@ const AboutPage = () => {
       id: 2,
       name: "Unnati Pal",
       role: "Outreach & Presentation Manager ",
-      image: "./src/assets/UnnatiImg2.jpg",
+      image: UnnatiImg2,
       bio: "Drives impactful communication through presentations, strategy, and team coordination.",
       skills: [
         "Pitch Decks",
@@ -72,7 +74,7 @@ const AboutPage = () => {
       id: 3,
       name: "Amit Singh Chauhan",
       role: "UI/UX Designer",
-      image: "/src/assets/AmitImg.jpg",
+      image: AmitImg,
       bio: "Designs user-friendly interfaces with a focus on consistency, aesthetics, and experience.",
       skills: [
         "UI/UX Design",
@@ -95,7 +97,7 @@ const AboutPage = () => {
       id: 4,
       name: "Akshat Singh",
       role: "Frontend Developer",
-      image: "/src/assets/AkshatImg.jpg",
+      image: AkshatImg, // ✅ Corrected
       bio: "Focuses on UI building, reusable components, responsiveness, and smooth frontend integration.",
       skills: [
         "React",
@@ -118,7 +120,7 @@ const AboutPage = () => {
       id: 5,
       name: "Abhinav Shukla",
       role: "Content & Research Specialist",
-      image: "/src/assets/AbhinavImg.jpeg",
+      image: AbhinavImg, // ✅ Corrected
       bio: "Contributes research and content that strengthen documentation and cultural insights.",
       skills: [
         "Research",
@@ -138,7 +140,7 @@ const AboutPage = () => {
       id: 6,
       name: "Arpit Mishra",
       role: "Content & Research Specialist",
-      image: "/src/assets/ArpitImg.jpeg",
+      image: ArpitImg2, // ✅ Fixed (was string path before)
       bio: "Supports project with eco-tourism research, content creation, and documentation",
       skills: [
         "Eco-tourism Research",
@@ -156,7 +158,6 @@ const AboutPage = () => {
       }
     }
   ];
-
   const milestones = [
     {
       year: "2024",
@@ -411,36 +412,31 @@ const AboutPage = () => {
           <div className="story-section">
             <div className="row mb-5">
               <div className="col-lg-8 mx-auto">
-                <h2 className="text-center fw-bold mb-5">Our Story</h2>
+                <h2 className="text-center fw-bold mb-5">🌿 Our Story</h2>
                 <div className="story-content">
                   <p className="lead mb-4">
-                    EcoJharkhand was born from a simple yet powerful idea: what if we could share
-                    the incredible cultural richness and natural beauty of Jharkhand with the world,
-                    while ensuring that the communities who call this land home benefit directly
-                    from tourism?
+                    “Every big change begins with a small spark.”<br></br>
+
+                    EcoJharkhand started as a simple idea during Smart India Hackathon (SIH 2025) — how can we make tourism in Jharkhand smarter, sustainable, and more accessible?<br></br>
+
+                    As a team of passionate engineers, designers, and storytellers, we came together with one vision:
+                    to bridge technology with culture, nature, and people.<br></br>
+
+                    We realized that while Jharkhand is rich in natural beauty, tribal heritage, and eco-tourism potential, there is a gap in digital access, sustainable promotion, and tourist engagement. That’s where EcoJharkhand was born.
                   </p>
 
                   <p className="mb-4">
-                    Our journey began when our founder, a tech enthusiast from Ranchi, returned home
-                    after years in the city and was struck by how little the outside world knew about
-                    Jharkhand's treasures. From the ancient rock paintings of Hazaribagh to the vibrant
-                    Sohrai art of tribal villages, from the freedom struggle of Birsa Munda to the
-                    living traditions of 32+ tribal communities - there were countless stories waiting
-                    to be told.
+                    Our journey has been fueled by:<br></br>
+                    •	💡 Innovation – building AI-powered itinerary planners & digital marketplaces.<br></br>
+                    •	🤝 Collaboration – working as a team with diverse skills, from coding to design to research.<br></br>
+                    •	🌍 Purpose – promoting sustainable tourism that empowers local communities while preserving the natural environment.
                   </p>
 
                   <p className="mb-4">
-                    But we also saw the challenges. Tourism, if not done thoughtfully, could threaten
-                    the very cultures and ecosystems it seeks to celebrate. That's why we built
-                    EcoJharkhand on three pillars: sustainability, authenticity, and community empowerment.
-                  </p>
+                    Today, EcoJharkhand is more than just a prototype — it’s our commitment to reimagining tourism in a way that is smart, eco-friendly, and deeply cultural.<br></br>
 
-                  <p className="mb-4">
-                    Today, we work directly with tribal communities, local artisans, and certified guides
-                    to create experiences that are not just memorable for travelers, but meaningful for
-                    the communities that make them possible. Our blockchain verification system ensures
-                    authenticity, while our revenue-sharing model ensures that tourism benefits reach
-                    the grassroots level.
+                    We are not just building a project for SIH.
+                    We are writing a story of youth-driven innovation for India’s tourism future.<br></br>
                   </p>
                 </div>
               </div>
